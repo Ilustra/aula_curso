@@ -4,16 +4,18 @@ package x_interfaces;
 
 
 import java.util.List;
+import model.Pais;
+import org.springframework.http.ResponseEntity;
 
 public interface ICRUD<T, ObjectDTO, ID> {
     
-    List<T> findAll();
+    ResponseEntity<List<T>> findAll();
     
     T getById();
     
-    void create(ObjectDTO entidade);
+    ResponseEntity<T> create(ObjectDTO entidade);
     
-    T update(ObjectDTO entidade);
+    ResponseEntity<T> update(ObjectDTO entidade);
     
     void delete(ID id);
     

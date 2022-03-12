@@ -2,6 +2,7 @@
 package x_abstracts;
 import x_interfaces.ICRUD;
 import java.util.List;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,7 +14,7 @@ public  abstract class CurdController<T, DTO, ID> implements ICRUD<T, DTO, ID>
 
     @Override
     @GetMapping
-    public List<T> findAll() {
+    public ResponseEntity<List<T>> findAll() {
         throw new UnsupportedOperationException("Not supported yet."); 
     }
 
@@ -25,13 +26,13 @@ public  abstract class CurdController<T, DTO, ID> implements ICRUD<T, DTO, ID>
 
     @Override
     @PostMapping()
-    public void create(DTO entidade) {
+    public  ResponseEntity<T> create(DTO entidade) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
     @PutMapping
-    public T update(DTO entidade) {
+    public  ResponseEntity<T> update(DTO entidade) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
