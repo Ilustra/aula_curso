@@ -22,8 +22,7 @@ Ferramentas usadas para criação do projeto
 
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
-* **Um desenvolvedor** - *Trabalho Inicial* - [Ricardo Subjack](https://github.com/linkParaPerfil)
-* **Um desenvolvedor** - *Suporte e colaboração* - [Kaique Andrade](https://github.com/Ilustra)
+* **Um desenvolvedor** -  [Kaique Andrade](https://github.com/Ilustra)
 
 
 
